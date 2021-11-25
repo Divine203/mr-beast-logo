@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mr beast</title>
+</head>
+<body>
+	<div class="container">
+		<div class="div1"></div>
+		<div class="ear"></div>
+		<div class="div2">
+			<div class="nose"></div>
+		</div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+		<div class="div5"></div>
+		<div class="div6"></div>
+		<div class="div7"></div>
+		<div class="red_lightning"></div>
+		<div class="div9">
+			<div class="eyeball"></div>
+		</div>
+		<div class="teeth1"></div>
+		<div class="teeth2"></div>
+		<div class="tongue"></div>
+		<div class="neck_line1"></div>
+		<div class="neck_line2"></div>
+	</div>
+
+	<img src="mr beast.png" width="350px" height="70px"> 
+</body>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: #111;
+		transform-style: preserve-3d;
+	}
+	.container{
+		position: absolute;
+		top: 0px;
+		transform-style: preserve-3d;
+		animation: tilt 3s infinite 0s;
+	}
+	@keyframes tilt{
+		0%{
+			transform: rotate(0deg);
+		}
+		50%{
+			top: 150px;
+			transform: rotate(-13deg);
+		}
+		100%{
+			transform: rotate(0deg);
+		}
+	}
+
+.div1{
+	width: 200px;
+	height: 200px;
+	background: dodgerblue;
+	position: absolute;
+	top: 100px;
+	left: 600px;
+	clip-path: polygon(46% 4%, 52% 8%, 71% 12%, 81% 27%, 80% 35%, 12% 29%, 0 15%, 18% 9%, 30% 0);
+	animation: rotate 3s infinite 0s;
+}
+	@keyframes rotate{
+		0%{
+			transform: rotate(0deg);
+		}
+		50%{
+			transform: rotate(-5deg);
+		}
+		100%{
+			transform: rotate(0deg);
+		}
+	}
+	.ear{
+		width: 30px;
+		height: 50px;
+		background: #111;
+		position: absolute;
+		left: 610px;
+		top: 120px;
+		transform: translateZ(1px) rotate(0deg);
+		clip-path: polygon(90% 32%, 100% 23%, 88% 48%, 69% 66%, 79% 49%, 90% 39%, 58% 33%, 20% 29%, 0 30%, 0 24%);
+	}
+
+	.div2{
+		width: 100px;
+		height: 100px;
+		background: dodgerblue;
+		position: absolute;
+		top: 155px;
+		left: 708px;
+		transform: rotate(10deg);
+		clip-path: polygon(45% 2%, 74% 14%, 86% 25%, 100% 37%, 93% 44%, 86% 61%, 61% 65%, 47% 54%, 43% 23%);
+		animation: animate_first 3s infinite 0s;
+	}
+	@keyframes animate_first{
+		0%{
+			top: 155px;
+			left: 708px;
+		}
+		50%{
+			top: 145px;
+			left: 705px;
+		}
+		100%{
+			top: 155px;
+			left: 708px;
+		}
+	}
+		.nose{
+			width: 40px;
+			height: 35px;
+			background: red;
+			position: absolute;
+			top: 25px;
+			left: 58px;
+			transform: rotate(-10deg);
+			clip-path: polygon(39% 20%, 70% 20%, 99% 54%, 80% 68%, 65% 74%, 39% 51%);
+		}
+	.div3{
+		width: 100px;
+		height: 100px;
+		background: dodgerblue;
+		position: absolute;
+		top: 144px;
+		left: 657px;
+		transform: rotate(28deg); 
+	}
+	.div4{
+		width: 120px;
+		height: 100px;
+		background: dodgerblue;
+		position: absolute;
+		top: 210px;
+		left: 687px;
+		transform: rotate(0deg);
+		clip-path: polygon(48% 38%, 74% 53%, 85% 51%, 78% 58%, 65% 78%, 31% 71%, 45% 71%, 35% 67%, 42% 63%, 34% 0);
+		animation: animate_third 3s infinite 0s;
+	}
+	@keyframes animate_third{
+		0%{
+			top: 210px;
+		}
+		50%{
+			top: 220px;
+		}
+		100%{
+			top: 210px;
+		}
+	}
+	.div5{
+		width: 180px;
+		height: 220px;
+		background: dodgerblue;
+		position: absolute;
+		top: 120px;
+		left: 600px;
+		transform: rotate(13deg);
+		clip-path: polygon(74% 45%, 59% 61%, 61% 76%, 73% 96%, 40% 81%, 34% 88%, 9% 60%, 9% 38%, 5% 45%, 5% 18%);
+	}
+	.div6{
+		width: 20px;
+		height: 20px;
+		background: dodgerblue;
+		position: absolute;
+		left: 645px;
+		top: 150px;
+	}
+	.div7{
+		width: 60px;
+		height: 55px;
+		background: dodgerblue;
+		position: absolute;
+		left: 680px;
+		top: 220px;
+		transform: rotate(60deg);
+		clip-path: polygon(100% 0, 86% 68%, 100% 100%, 0 99%, 0 0);
+	}
+	.red_lightning{
+		width: 230px;
+		height: 190px;
+		background: red;
+		position: absolute;
+		top: 140px;
+		left: 500px;
+		clip-path: polygon(100% 2%, 100% 6%, 92% 10%, 100% 14%, 78% 15%, 93% 24%, 18% 14%, 70% 10%, 60% 2%);
+		animation: rotate_second 3s infinite 0s;
+	}
+	@keyframes rotate_second{
+		0%{
+			transform: rotate(0deg);
+			background: red;
+		}
+		50%{
+			transform: rotate(-5deg);
+			background: yellow;
+		}
+		100%{
+			transform: rotate(0deg);
+			background: red;
+		}
+	}
+	.div9{
+		width: 25px;
+		height: 15px;
+		background: #fff;
+		position: absolute;
+		left: 710px;
+		top: 150px;
+		clip-path: polygon(61% 5%, 84% 18%, 86% 51%, 81% 74%, 61% 98%, 35% 92%, 21% 71%, 0 45%, 28% 17%);
+		animation: rotate_third 3s infinite 0s;
+	}
+	@keyframes rotate_third{
+		0%{
+			top: 150px;
+		}
+		50%{
+			height: 1px;
+			top: 145px;
+			left: 705px;
+		}
+		100%{
+			top: 150px;
+		}
+	}
+			.eyeball{
+				width: 30px;
+				height: 20px;
+				background: black;
+				position: relative;
+				left: 2px;
+				transform: rotate(10deg);
+				clip-path: polygon(50% 0%, 55% 0, 54% 28%, 51% 51%, 45% 77%, 49% 36%);
+			}
+		.teeth1{
+			width: 60px;
+			height: 40px;
+			background: #fff;
+			position: absolute;
+			left: 735px;
+			top: 216px;
+			border-top: 3px solid dodgerblue;
+			transform: rotate(14deg);
+			clip-path: polygon(86% 0, 78% 30%, 63% 46%, 72% 23%, 72% 1%, 68% 30%, 51% 56%, 55% 31%, 52% 16%, 43% 0);
+			animation: animate_second 3s infinite 0s;
+		}
+	@keyframes animate_second{
+		0%{
+			top: 216px;
+		}
+		50%{
+			top: 206px;
+		}
+		100%{
+			top: 216px;
+		}
+	}
+
+		.teeth2{
+			width: 60px;
+			height: 80px;
+			background: #fff;
+			position: absolute;
+			left: 750px;
+			top: 190px;
+			clip-path: polygon(9% 78%, 16% 67%, 23% 77%, 46% 85%, 66% 72%, 53% 93%, 31% 93%, 10% 84%, 0 80%, 0 69%);
+			animation: animate_fourth 3s infinite 0s;
+		}
+			@keyframes animate_fourth{
+		0%{
+			top: 190px;
+		}
+		50%{
+			top: 200px;
+		}
+		100%{
+			top: 190px;
+		}
+	}
+		.tongue{
+			width: 50px;
+			height: 30px;
+			background: red;
+			position: absolute;
+			left: 733px;
+			top: 220px;
+			transform: translateZ(-1px);
+			clip-path: polygon(39% 23%, 52% 48%, 54% 73%, 52% 100%, 51% 100%, 0 100%, 0 0); 
+		}
+
+		.neck_line1{
+			width: 60px;
+			height: 40px;
+			background: #111;
+			position: absolute;
+			left: 685px;
+			top: 240px;
+			clip-path: polygon(39% 17%, 74% 41%, 88% 61%, 93% 78%, 69% 78%, 85% 73%, 81% 60%, 68% 44%, 40% 24%, 5% 3%);
+		}
+		.neck_line2{
+			width: 100px;
+			height: 40px;
+			background: #111;
+			position: absolute;
+			left: 670px;
+			top: 255px;
+			transform: rotate(15deg);
+			clip-path: polygon(43% 4%, 66% 13%, 45% 9%, 45% 11%, 42% 13%, 46% 21%, 26% 14%, 0 9%, 36% 13%); 
+		}
+		img{
+			position: absolute;
+			top: 400px;
+			left: 500px;
+		}
+</style>
+</html>
